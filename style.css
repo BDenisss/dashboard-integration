@@ -461,7 +461,7 @@ main {
   height: 174px;
 }
 .container-sidebar .container-card .icon-crypto {
-  margin-top: 13px;
+  margin-top: 7px;
   margin-left: 21px;
 }
 .container-sidebar .container-card .icon-crypto .white {
@@ -480,6 +480,54 @@ main {
 }
 .container-sidebar .container-card .amount {
   display: flex;
+  justify-content: space-between;
+  margin: 0 21px;
+  margin-top: 9px;
+  font-size: 27px;
+  font-family: "Inter", sans-serif;
+}
+.container-sidebar .container-card .amount .white {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1680px) {
+  main .container-left {
+    margin-right: 12px;
+  }
+  main .container-left .button {
+    width: 90%;
+  }
+  main .container-left .button img {
+    width: 35px;
+    height: 35px;
+  }
+  main .container-left .button a {
+    font-size: 1.2em;
+  }
+  main .container-left .menu {
+    padding: 15px 10px 10px 6px;
+  }
+  main .container-left .menu li {
+    font-size: 20px;
+  }
+  main .container-left .menu li img {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media screen and (max-width: 1680px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    grid-template-areas: "content sidebar";
+    grid-template-rows: 1fr;
+  }
+  main .container-left {
+    display: none;
+  }
+  main .container-sidebar {
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
