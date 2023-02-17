@@ -628,5 +628,62 @@ main {
     width: 300px;
   }
 }
+@media screen and (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  main .container-center .menu-center {
+    place-items: center;
+  }
+  main .container-center .container-graph {
+    display: flex;
+    justify-content: center;
+  }
+  main .container-center .container-graph img {
+    width: 90%;
+  }
+  main .container-center .container-transaction-center {
+    margin: 0 16px;
+  }
+  main .container-center .container-transaction-center .container-coin-graph {
+    justify-content: center;
+  }
+  main .container-center .container-transaction-center .container-coin-graph .coin-graph {
+    width: 100% !important;
+  }
+  .container-sidebar .container-card {
+    justify-content: center;
+    flex-direction: unset;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .logo-container {
+    align-items: baseline;
+    margin-left: 16px;
+  }
+  header .logo-container h1 {
+    font-size: 24px;
+  }
+  header .logo-container img {
+    width: 50px;
+    height: fit-content;
+    align-items: center;
+  }
+  header .welcome h1 {
+    font-size: 24px;
+  }
+  header .profile {
+    margin-right: 16px;
+  }
+  main .container-sidebar {
+    margin: 24px 0;
+  }
+  main .container-card {
+    margin-bottom: 24px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
