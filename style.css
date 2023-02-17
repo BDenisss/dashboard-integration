@@ -653,6 +653,9 @@ main {
   main .container-center .container-transaction-center .container-coin-graph .coin-graph {
     width: 100% !important;
   }
+  .container-sidebar {
+    margin: 24px 0;
+  }
   .container-sidebar .container-card {
     justify-content: center;
     flex-direction: unset;
@@ -675,14 +678,19 @@ main {
   header .welcome h1 {
     font-size: 24px;
   }
+  header .search-bar ::placeholder {
+    font-size: 16px;
+  }
   header .profile {
     margin-right: 16px;
   }
-  main .container-sidebar {
-    margin: 24px 0;
-  }
   main .container-card {
     margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .welcome {
+    display: none;
   }
 }
 
