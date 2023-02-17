@@ -97,10 +97,10 @@ header {
 .search-bar {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   background: #FFFFFF;
   border-radius: 15px;
-  padding: 0 10px;
+  padding: 0 24px;
   width: 476px;
   height: 50px;
 }
@@ -527,6 +527,105 @@ main {
   }
   main .container-sidebar {
     align-items: center;
+  }
+}
+@media screen and (max-width: 1440px) {
+  header {
+    margin-top: 45px;
+  }
+  header .logo-container h1 {
+    font-size: 32px;
+  }
+  header .welcome h1 {
+    font-size: 32px;
+  }
+  header .search-bar {
+    width: 30%;
+  }
+  header .search-bar ::placeholder {
+    font-size: 18px;
+  }
+  main .container-graph img {
+    width: 60vw;
+  }
+  main .container-transaction-center .text-transaction p:nth-child(1) {
+    font-size: 18px;
+  }
+  main .container-transaction-center .text-transaction p:nth-child(2) {
+    font-size: 18px;
+  }
+  main .container-transaction-center .container-coin-graph .coin-graph {
+    width: 60vw;
+  }
+  main .container-transaction-center .container-coin-graph .coin-graph .button-trade .button-trade-inside a {
+    font-size: 14px;
+    line-height: 0;
+    padding: 14px 14px;
+  }
+  .menu-center .balance p {
+    font-size: 18px;
+  }
+  .menu-center .balance .amount-btc .BTC {
+    padding: 2px 5px;
+    font-size: 12px;
+  }
+  .menu-center .menu-balance .container-menu-balance {
+    gap: 16px;
+    padding: 6px 16px;
+  }
+  .menu-center .menu-balance .container-menu-balance a {
+    font-size: 16px;
+  }
+  .menu-center .menu-balance .container-menu-balance .select {
+    padding: 4px 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .container-graph img {
+    width: 600px;
+  }
+  .container-transaction-center .container-coin-graph .coin-graph {
+    width: 600px !important;
+  }
+  .container-transaction-center .container-coin-graph .coin-graph .text-coin p {
+    font-size: 12px;
+  }
+  .container-transaction-center .container-coin-graph .coin-graph .market-text p {
+    font-size: 12px;
+  }
+  .container-transaction-center .container-coin-graph .coin-graph .text-time p {
+    font-size: 12px;
+  }
+  .container-transaction-center .container-coin-graph .coin-graph .graph-btc img {
+    width: 10vw;
+  }
+  .container-sidebar {
+    padding: 0 0 0 20px;
+  }
+  .container-sidebar .container-transaction-sidebar {
+    width: 80%;
+  }
+  .container-sidebar .container-transaction-sidebar .container-crypto-sidebar .sidebar-img img {
+    height: 45px;
+    width: 45px;
+  }
+  .container-sidebar .container-transaction-sidebar .container-crypto-sidebar .sidebar-text p:nth-child(1) {
+    font-size: 12px;
+  }
+  .container-sidebar .container-transaction-sidebar .container-crypto-sidebar .sidebar-text p:nth-child(2) {
+    font-size: 14px;
+  }
+  .container-sidebar .container-transaction-sidebar .container-crypto-sidebar .transaction-sidebar p:nth-child(1) {
+    font-size: 14px;
+  }
+  .container-sidebar .container-transaction-sidebar .container-crypto-sidebar .transaction-sidebar p:nth-child(2) {
+    font-size: 16px;
+  }
+  .container-sidebar .container-card .card1 {
+    width: 300px;
+  }
+  .container-sidebar .container-card .card2 {
+    width: 300px;
   }
 }
 
